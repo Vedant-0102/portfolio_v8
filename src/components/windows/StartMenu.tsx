@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useWindows } from './context/WindowsContext';
 import { Search, Power, Settings } from 'lucide-react';
@@ -66,7 +65,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
 
   const handlePowerOff = () => {
     setIsShuttingDown(true);
-    toast.info("Shutting down...");
+    // toast.info("Shutting down..."); // Removed toast
     
     // Set shutdown flag before reloading
     sessionStorage.setItem('win11-shutdown-action', 'true');
@@ -82,11 +81,12 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
         </div>
       `;
       
-      // After a few seconds, simply reload the page
+      // After 5 seconds, show a black screen
       setTimeout(() => {
-        window.location.reload();
-      }, 3000);
-    }, 1000);
+        document.body.innerHTML = '';
+        document.body.style.backgroundColor = '#000';
+      }, 5000);
+    }, );
   };
 
   if (!isOpen) return null;
