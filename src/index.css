@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --win-taskbar: rgba(243, 243, 243, 0.85);
+    --win-blue: #0078D4;
+    --win-blue-dark: #005a9e;
+    --win-blue-light: #50D9FF;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    color: rgb(var(--foreground));
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --win-taskbar: rgba(32, 32, 32, 0.85);
+    --win-blue: #005FB8;
+    --win-blue-dark: #004C92;
+    --win-blue-light: #4AB0FF;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Windows 11 background image */
+  /* Windows 11 styling */
+  .win11-bg {
+    @apply transition-all duration-300;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-stock-official-3840x2400-5630.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .dark .win11-bg {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-stock-official-3840x2400-5630.jpg');
+  }
+  
+  /* Windows 11 glass effect */
+  .win11-glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/30 shadow-lg rounded-xl transition-colors duration-300;
+  }
+  
+  .dark .win11-glass {
+    @apply bg-gray-900/80 border-gray-800/50;
+  }
+  
+  /* Taskbar styling */
+  .bg-win-taskbar {
+    background-color: rgba(243, 243, 243, 0.85);
+  }
+  
+  .dark .bg-win-taskbar {
+    background-color: rgba(32, 32, 32, 0.85);
+  }
+  
+  .backdrop-blur-win {
+    backdrop-filter: blur(20px);
+  }
+  
+  .bg-win-blue {
+    background-color: #0078D4;
+  }
+  
+  .bg-win-blue-dark {
+    background-color: #005A9E;
+  }
+  
+  .shadow-win {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .shadow-win {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Windows 11 animations */
+  @keyframes win11-appear {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .win11-appear {
+    animation: win11-appear 0.2s ease-out forwards;
+  }
+  
+  /* Windows 11 rounded corners */
+  .win11-rounded {
+    border-radius: 8px;
+  }
+  
+  /* Windows 11 button styles */
+  .win11-button {
+    @apply rounded-md bg-white/10 hover:bg-white/20 active:bg-white/30 transition-colors;
+  }
+  
+  .dark .win11-button {
+    @apply bg-gray-800/30 hover:bg-gray-800/50 active:bg-gray-800/70;
+  }
+}
+
