@@ -21,76 +21,313 @@ const ProjectFolder = () => {
   
   const projects: Project[] = [
     {
-      id: 'proj1',
-      name: 'Portfolio Website',
-      description: 'A personal portfolio website built with React and TailwindCSS. Features responsive design, dark mode, and smooth animations.',
-      tech: ['React', 'TailwindCSS', 'Vite'],
-      about: 'This personal portfolio showcases my skills and projects in web development. Built with modern technologies, it features a responsive design that works great on all devices, animated transitions, and a user-friendly interface.',
+      id: 'Proj',
+      name: 'LimeAI',
+      description: 'LimeAI is an AI-powered learning platform designed to provide personalized education.',
+      tech: ['React', 'TailwindCSS', 'NodeJS'],
+      about: 'LimeAI is an AI-powered platform that makes studying easy and interactive.',
       screenshots: [],
       features: [
-        'Responsive design for all devices',
-        'Dark/light theme switching',
-        'Interactive project showcase',
-        'Contact form with validation'
+        'Whiteboard – Take notes and save them as PNG images.',
+        'AI Note Summarization – Get concise summaries of your notes.',
+        'AI Chatbot – Ask doubts from your notes and get instant answers.',
+        'Diagram Visualizer AI – Uses Mermaid.js to generate concept diagrams.',
+        'Podcast AI – Converts notes into audio for better retention.'
       ],
       links: {
-        demo: 'https://portfolio.example.com',
-        github: 'https://github.com/username/portfolio'
+        demo: 'https://www.thelimeai.xyz/',
+        github: 'https://github.com/Om-Thanage/LimeAi'
       }
     },
     {
-      id: 'proj2',
-      name: 'E-commerce Platform',
-      description: 'Online shopping platform with React, Node.js and MongoDB. Features user authentication, product catalog, and payment processing.',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-      about: 'A full-featured e-commerce solution that provides a seamless shopping experience. This platform includes user authentication, product management, shopping cart functionality, secure payment processing, and order tracking.',
+      id: 'Proj',
+      name: 'AI Model to Predict winner of Game',
+      description: 'CS-GO Global Offensive a popular first person Shooter game.',
+      tech: ['Python', 'Jupyter Notebook'],
+      about: 'Predicts the outcome of rounds in the game Counter-Strike: Global Offensive (CS:GO) using machine learning techniques.',
       features: [
-        'User authentication and profiles',
-        'Product search and filtering',
-        'Shopping cart functionality',
-        'Payment processing',
-        'Order tracking'
+        'Data extraction and preprocessing from a custom dataset.',
+        'Exploratory data analysis and visualization.',
+        'Machine learning model training and evaluation (using scikit-learn and TensorFlow).',
+        'Interactive charts and visualizations',      
       ],
       links: {
-        demo: 'https://shop.example.com',
-        github: 'https://github.com/username/ecommerce'
+        demo: 'https://colab.research.google.com/drive/1hsSQyvfLFvYu0a9MfM8Sq7kzm8upF5iz?usp=sharing',
+        github: 'https://github.com/Vedant-0102/CS-GO-Round-Win-ML'
       }
     },
     {
-      id: 'proj3',
-      name: 'Mobile App',
-      description: 'Cross-platform mobile app using React Native. Features location tracking, social sharing, and offline support.',
-      tech: ['React Native', 'Expo', 'Firebase'],
-      about: 'This cross-platform mobile application provides location-based services with social features. Built with React Native and Expo, it works seamlessly on both iOS and Android devices with native-like performance.',
+      id: 'Proj',
+      name: 'Audio Visualizer',
+      description: 'A project to visualize audio in real-time from audio files. This application provides graphical representations of audio signals, making it easier to understand and analyze sound.',
+      tech: ['TypeScript', 'Tailwind CSS', 'Three.js', 'React', 'React Three Fiber'],
+      about: 'Audio Visualizer is a modern web app built using React and Three.js that allows users to upload and visualize audio files in real-time. It supports multiple visualization modes and formats, offering an engaging way to interact with sound.',
+      features: [
+        'Real-time audio visualization',
+        'Support for various audio formats',
+        'Multiple visualization styles (waveform, spectrum, etc.)',
+        'User-friendly interface'
+      ],
+      links: {
+        demo: 'https://audio-visualizer-gules.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Audio-Visualizer'
+      }
+    },  
+    {
+      id: 'Proj',
+      name: 'To Do Mobile App',
+      description: 'Cross-platform mobile app using Flutter',
+      tech: ['Flutter', 'Hive'],
+      about: 'This cross-platform mobile application allowing user to track their daily tasks.',
       features: [
         'Cross-platform (iOS & Android)',
-        'User authentication',
-        'Location tracking',
-        'Push notifications',
-        'Offline data sync'
+        'Add, edit, and delete tasks',
+        'Mark tasks as completed',
+        'Persistent storage using Hive database',
+        'Interactive UI with a modern design'
       ],
       links: {
-        github: 'https://github.com/username/mobile-app'
+        github: 'https://github.com/Vedant-0102/To-Do-App-flutter'
       }
     },
     {
-      id: 'proj4',
-      name: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard with real-time data visualization using D3.js and React.',
-      tech: ['D3.js', 'React', 'Node.js'],
-      about: 'This interactive dashboard provides powerful data visualization capabilities for complex datasets. Using D3.js with React, it renders dynamic charts and graphs that update in real-time as data changes.',
+      id: 'Proj',
+      name: 'Route Optimizer Waylign',
+      description: 'An intelligent route optimization tool with interactive visualizations, powered by Dijkstras algorithm.',
+      tech: ['TypeScript', 'React', 'Tailwind'],
+      about: 'Route Optimizer is an intelligent trip planning platform that helps you find the most efficient route between multiple destinations.',
       features: [
-        'Real-time data updates',
-        'Interactive charts and graphs',
-        'Data filtering and search',
-        'Export to CSV/PDF'
+        'Interactive Map-Based UI: Search for and add multiple real-world locations with an intuitive interface',
+        'Location Search: Integrated with OpenStreetMaps Nominatim API for global location search',
+        'Custom Network Creation: Design your own network of nodes and connections',
+        'Step-by-Step Visualization: Watch how the algorithm explores the graph to find the optimal solution'
       ],
       links: {
-        demo: 'https://dashboard.example.com',
-        github: 'https://github.com/username/dashboard'
+        demo: 'https://waylign.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Route-Optimiser'
       }
-    }
-  ];
+    },
+    {
+      id: 'Proj',
+      name: 'Sorting Visualizer',
+      description: 'Visually demonstrates how various sorting algorithms work through real-time animated bar charts. Ideal for students, educators, and developers to understand sorting logic.',
+      tech: ['Python', 'Matplotlib'],
+      about: 'Sorting Visualizer is a Python-based desktop application that showcases the working of popular sorting algorithms. It uses Matplotlib to animate the sorting process, making complex logic easier to grasp through interactive visuals.',
+      features: [
+        'Real-time animated bar chart visualizations',
+        'Supports multiple sorting algorithms like Bubble, Merge, and Quick Sort',
+        'Live stats including time taken and number of swaps'
+      ],
+      links: {
+        demo: 'https://sorting-algo.streamlit.app/',
+        github: 'https://github.com/Vedant-0102/Sorting-Algo-Web'
+      }
+    },
+      {
+        id: 'Proj',
+        name: 'Text Editor',
+        description: 'A modern, lightweight text editor built with React and Vite that offers a clean interface and powerful editing capabilities.',
+        tech: ['React', 'Vite', 'CSS Modules'],
+        about: 'This project provides an intuitive writing environment with essential text manipulation features, making it perfect for note-taking, coding, or general writing tasks.',
+        features: [
+          'Clean, Minimalist Interface',
+          'Real-time Text Formatting',
+          'Auto-save Functionality',
+          'Customizable Themes',
+          'Export Options',
+          'Responsive Design'
+        ],
+        links: {
+          demo: 'https://text-editor-lovat-nine.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Text-Editor'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Pixel Art Generator',
+        description: 'A modern, interactive Pixel Art Generator built with React. Create stunning pixel art with customizable grid sizes and color palettes.',
+        tech: ['React', 'CSS'],
+        about: 'Users can draw pixel art on a grid canvas, select colors, switch between paint and erase modes, and export their artwork.',
+        features: [
+          'Custom Grid Sizing (Up to 35×35)',
+          'Color Picker with Hex Code Support',
+          'Paint & Erase Modes',
+          'Save as PNG',
+          'Responsive Design'
+        ],
+        links: {
+          demo: 'https://pixel-art-ko6s.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Pixel-Art'
+        }
+      },
+      {
+        id: 'Proj',
+        name: '2D Raycasting Maze',
+        description: 'This project simulates a raycasting-based rendering in a maze environment using a first-person perspective.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Navigate a procedurally generated maze using raycasting to simulate depth. Includes mini-map and replay functionality.',
+        features: [
+          'First-person raycasting view',
+          'Maze generation algorithm',
+          'Real-time mini-map',
+          'Play Again and Restart options'
+        ],
+        links: {
+          demo: 'https://ray-casting-maze.vercel.app/',
+          github: 'https://github.com/Vedant-0102/RayCasting-Maze'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Delivery Route Optimization',
+        description: 'A Streamlit app that finds the optimal delivery route using the Traveling Salesperson Problem approach.',
+        tech: ['Python'],
+        about: 'Users can input delivery points and distances to get the shortest route and total distance calculated.',
+        features: [
+          'Add multiple locations',
+          'Input custom distances',
+          'Optimal route calculation',
+          'Starting point selection'
+        ],
+        links: {
+          demo: 'https://delivery-optimiser.streamlit.app/',
+          github: 'https://github.com/Vedant-0102/Delivery-Optimiser'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Falling Sand Simulator',
+        description: 'A simple interactive falling sand simulation using real-time physics.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Particles fall and interact with the environment based on gravity and properties. Supports visual changes on interaction.',
+        features: [
+          'Real-time physics updates',
+          'Customizable sand behavior',
+          'Interactive environment'
+        ],
+        links: {
+          demo: 'https://sand-falling-sim.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Sand-Falling-Sim'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Minesweeper Game',
+        description: 'A modern version of Minesweeper built with React, featuring animations and game state tracking.',
+        tech: ['React', 'CSS'],
+        about: 'Click tiles to reveal numbers or mines. Use logic to win and track your time and score.',
+        features: [
+          '9×9 grid with 10 mines',
+          'Flagging and real-time feedback',
+          'Win/loss detection with animations',
+          'Restart and new game support'
+        ],
+        links: {
+          demo: 'https://mine-sweeper-liart.vercel.app/',
+          github: 'https://github.com/Vedant-0102/MineSweeper'
+        }
+      },
+      {
+        id: 'Proj',
+        name: '15 Puzzle Game',
+        description: 'Slide tiles in a 4×4 grid to arrange numbers in order. Track moves and time to solve the puzzle.',
+        tech: ['React', 'CSS'],
+        about: 'An elegant version of the classic 15 puzzle with smooth animations and real-time tracking.',
+        features: [
+          'Interactive sliding tiles',
+          'Move counter and timer',
+          'Win detection and feedback',
+          'Smooth tile transitions'
+        ],
+        links: {
+          demo: 'https://15-puzzle-two.vercel.app/',
+          github: 'https://github.com/Vedant-0102/15Puzzle'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Tetris',
+        description: 'A classic Tetris game built with React and Vite, featuring modern visuals and responsive design.',
+        tech: ['React', 'CSS'],
+        about: 'Stack blocks, clear lines, and earn points in this responsive and fast-paced Tetris implementation.',
+        features: [
+          'Touch and keyboard controls',
+          'Level progression with speed increase',
+          'Preview of next tetromino',
+          'Game stats tracking'
+        ],
+        links: {
+          demo: 'https://tetris-lovat-sigma.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Tetris'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Connect 4',
+        description: 'Fun Connect 4 Game.',
+        tech: ['React'],
+        about: 'A modern, visually appealing Connect 4 game built with React.',
+        features: [
+          ' Retro Pixel Art Theme (Inspired by arcade games)',
+          ' Smooth Disc Drop Animation',    
+        ],
+        links: {
+          demo: 'https://connect-4-lemon-beta.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Connect-4'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'T-Rex Runner',
+        description: 'A recreation of Chrome\'s offline dinosaur game with increasing difficulty and score tracking.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Dodge obstacles by jumping over them in this endless runner. Mobile-ready with growing speed challenge.',
+        features: [
+          'Endless runner with increasing speed',
+          'Jump to avoid obstacles',
+          'Score and high score tracking',
+          'Responsive layout'
+        ],
+        links: {
+          demo: 'https://trex-kappa.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Trex'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Maze Generator',
+        description: 'Interactive maze generator using DFS with real-time visualization.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Watch the depth-first search algorithm create a perfect maze step-by-step. Supports reset and new generation.',
+        features: [
+          'Real-time generation with animation',
+          'DFS with recursive backtracking',
+          'Interactive controls',
+          'Visual feedback during generation'
+        ],
+        links: {
+          demo: 'https://maze-gen-mocha.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Maze-Gen'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Student Report Card',
+        description: 'A web app to manage students, courses, grades, and generate GPA-based report cards.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Add students and courses, assign grades, and calculate GPA. Supports graduate and undergraduate types.',
+        features: [
+          'Add students and courses',
+          'Assign grades and attendance',
+          'GPA calculation with weighting',
+          'Report generation with student details'
+        ],
+        links: {
+          demo: 'https://student-report-card-sand.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Student-Report'
+        }
+      }
+    ]
 
   return (
     <div className="p-4 h-full">
@@ -101,7 +338,7 @@ const ProjectFolder = () => {
         <div className="bg-white/50 rounded-lg overflow-y-auto">
           <div className="p-3 border-b border-gray-200">
             <div className="flex items-center gap-2">
-              <FolderOpen size={18} />
+              <FolderOpen size={18} className="text-yellow-600" />
               <span className="font-medium">Projects</span>
             </div>
           </div>
@@ -112,7 +349,7 @@ const ProjectFolder = () => {
                 className={`flex items-center p-3 hover:bg-gray-200/50 rounded-md cursor-pointer ${selectedProject?.id === project.id ? 'bg-gray-200/70' : ''}`}
                 onClick={() => setSelectedProject(project)}
               >
-                <FolderOpen size={18} className="mr-3 text-yellow-600" />
+                <FolderOpen size={18} className="mr-3 text-yellow-600 flex-shrink-0" />
                 <div>
                   <div className="font-medium">{project.name}</div>
                   <div className="text-xs text-gray-600 line-clamp-1">{project.description}</div>
@@ -122,7 +359,7 @@ const ProjectFolder = () => {
           </div>
         </div>
         
-        {/* Project Details View */}
+        {}
         <div className="col-span-2 bg-white/50 rounded-lg overflow-hidden flex flex-col">
           {selectedProject ? (
             <div className="h-full flex flex-col">

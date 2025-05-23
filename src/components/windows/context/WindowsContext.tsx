@@ -22,6 +22,7 @@ import AboutMe from '../features/AboutMe';
 import Skills from '../features/Skills';
 import Projects from '../features/Projects';
 import ContactMe from '../features/ContactMe';
+import Experience from '../features/Experience';
 
 const BASE_ZINDEX = 1000;
 const FOLDER_ZINDEX = BASE_ZINDEX;
@@ -226,31 +227,7 @@ export const WindowsProvider: React.FC<{ children: React.ReactNode }> = ({ child
       {
         id: 'experience',
         title: 'Experience',
-        content: (
-          <div className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
-            <div className="space-y-4">
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h3 className="font-medium">Senior Frontend Developer</h3>
-                <p className="text-sm text-gray-600">Company Name, 2022-Present</p>
-                <ul className="list-disc pl-5 mt-2 text-sm">
-                  <li>Led frontend development for major client projects</li>
-                  <li>Implemented modern React architecture with TypeScript</li>
-                  <li>Mentored junior developers and improved team workflows</li>
-                </ul>
-              </div>
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h3 className="font-medium">Web Developer</h3>
-                <p className="text-sm text-gray-600">Previous Company, 2019-2022</p>
-                <ul className="list-disc pl-5 mt-2 text-sm">
-                  <li>Built responsive web applications</li>
-                  <li>Collaborated with designers to implement UI/UX</li>
-                  <li>Maintained and optimized existing codebase</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        ),
+        content: <Experience />,
         isOpen: openWindowIds.includes('experience'),
         isMinimized: minimizedWindowIds.includes('experience'),
         icon: <Briefcase className="h-5 w-5" />,

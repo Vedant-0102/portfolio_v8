@@ -16,21 +16,20 @@ const Skills: React.FC = () => (
       <div className="bg-white/50 p-4 rounded-lg">
         <h3 className="font-medium mb-2">Backend</h3>
         <ul className="list-disc pl-5 text-sm">
+          <li>Learning backend</li>
           <li>Node.js</li>
           <li>Express</li>
           <li>Python</li>
-          <li>SQL / NoSQL</li>
+          <li>SQL </li>
         </ul>
       </div>
-      <div className="bg-white/50 p-4 rounded-lg">
-        <h3 className="font-medium mb-2">Tools</h3>
+      {/* <div className="bg-white/50 p-4 rounded-lg"> */}
+        {/* <h3 className="font-medium mb-2">Tools</h3>
         <ul className="list-disc pl-5 text-sm">
-          <li>Git</li>
-          <li>Docker</li>
-          <li>CI/CD</li>
-          <li>AWS / Vercel</li>
-        </ul>
-      </div>
+          <li>Git / Github</li>
+          <li>Adobe Photoshop</li>                    
+        </ul> */}
+      {/* </div> */}
     </div>
   </div>
 );

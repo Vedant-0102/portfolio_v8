@@ -4,7 +4,9 @@ const AboutMe: React.FC = () => (
   <div className="p-6">
     <h2 className="text-2xl font-semibold mb-4">About Me</h2>
     <p className="mb-4">
-      i code 
+      Vedant Shinde <br></br>
+      i code <br></br>
+      i like planes
     </p>
     <div className="grid grid-cols-2 gap-4 mt-6">
       <div className="bg-white/50 p-4 rounded-lg">
