@@ -117,8 +117,6 @@
     width: 100%;
   }
 
-  /* Windows 11 background image */
-  /* Windows 11 styling */
   .win11-bg {
     @apply transition-all duration-300;
     background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-stock-official-3840x2400-5630.jpg');
@@ -130,7 +128,6 @@
     background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-stock-official-3840x2400-5630.jpg');
   }
   
-  /* Windows 11 glass effect */
   .win11-glass {
     @apply bg-white/80 backdrop-blur-md border border-white/30 shadow-lg rounded-xl transition-colors duration-300;
   }
@@ -139,7 +136,6 @@
     @apply bg-gray-900/80 border-gray-800/50;
   }
   
-  /* Taskbar styling */
   .bg-win-taskbar {
     background-color: rgba(243, 243, 243, 0.85);
   }
@@ -168,7 +164,6 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
   
-  /* Windows 11 animations */
   @keyframes win11-appear {
     from {
       opacity: 0;
@@ -184,12 +179,10 @@
     animation: win11-appear 0.2s ease-out forwards;
   }
   
-  /* Windows 11 rounded corners */
   .win11-rounded {
     border-radius: 8px;
   }
   
-  /* Windows 11 button styles */
   .win11-button {
     @apply rounded-md bg-white/10 hover:bg-white/20 active:bg-white/30 transition-colors;
   }

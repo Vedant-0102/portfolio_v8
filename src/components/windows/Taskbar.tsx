@@ -37,17 +37,15 @@ export const Taskbar = ({
   const [date, setDate] = useState<Date | undefined>(new Date());
   const [activeWindows, setActiveWindows] = useState<WindowType[]>([]);
 
-  // Update active windows in taskbar - only show windows that are open
   useEffect(() => {
     const openWindows = windows.filter(w => 
       w.isOpen && 
-      w.id !== 'settings' &&  // Settings is always in the taskbar
+      w.id !== 'settings' &&  
       w.showInTaskbar !== false
     );
     setActiveWindows(openWindows);
   }, [windows]);
 
-  // Update clock
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
@@ -58,22 +56,18 @@ export const Taskbar = ({
     };
   }, []);
 
-  // Use Battery API if available
   useEffect(() => {
     const getBatteryInfo = async () => {
       try {
         if ('getBattery' in navigator) {
           const battery = await (navigator as any).getBattery();
           
-          // Initial update
           setBatteryLevel(Math.floor(battery.level * 100));
           setIsCharging(battery.charging);
           
-          // Listen for changes
           battery.addEventListener('levelchange', () => {
             setBatteryLevel(Math.floor(battery.level * 100));
             
-            // Send notification if battery is low
             if (battery.level <= 0.2 && !battery.charging) {
               new Notification('Battery Low', {
                 body: `Battery level is at ${Math.floor(battery.level * 100)}%. Please connect charger.`,
@@ -93,7 +87,6 @@ export const Taskbar = ({
             }
           });
         } else {
-          // Fallback for browsers that don't support Battery API
           setBatteryLevel(Math.floor(Math.random() * 30) + 70);
         }
       } catch (error) {
@@ -102,7 +95,6 @@ export const Taskbar = ({
       }
     };
     
-    // Request notification permission if needed
     if (Notification.permission === 'default') {
       Notification.requestPermission();
     }
@@ -113,7 +105,7 @@ export const Taskbar = ({
   return (
     <div className="fixed bottom-0 left-0 right-0 h-12 bg-win-taskbar backdrop-blur-win border-t border-white/20 shadow-win flex items-center justify-between">
       <div className="flex items-center gap-1 px-2">
-        {/* Start Button */}
+        {}
         <button 
           className={`p-2 rounded-md transition-colors ${isStartMenuOpen ? 'bg-white/20' : 'hover:bg-white/10'}`}
           onClick={(e) => { e.stopPropagation(); onStartClick(); }}
@@ -124,7 +116,7 @@ export const Taskbar = ({
           </div>
         </button>
         
-        {/* Search */}
+        {}
         <button 
           className={`p-2 rounded-md transition-colors ${isSearchOpen ? 'bg-white/20' : 'hover:bg-white/10'}`} 
           onClick={(e) => { e.stopPropagation(); onSearchClick(); }}
@@ -133,7 +125,7 @@ export const Taskbar = ({
           <Search size={18} className="text-gray-600" />
         </button>
         
-        {/* Settings (Always visible in taskbar) */}
+        {}
         <button 
           className={`p-2 rounded-md transition-colors ${
             windows.find(w => w.id === 'settings')?.isOpen ? 'bg-white/20' : 'hover:bg-white/10'
@@ -144,7 +136,7 @@ export const Taskbar = ({
           <Settings size={18} className="text-gray-700" />
         </button>
         
-        {/* Refresh */}
+        {}
         <button 
           className="p-2 rounded-md hover:bg-white/10 transition-colors"
           onClick={(e) => { e.stopPropagation(); if (onRefreshClick) onRefreshClick(); }}
@@ -153,12 +145,12 @@ export const Taskbar = ({
           <RefreshCw size={18} className="text-gray-600" />
         </button>
         
-        {/* Divider */}
+        {}
         {activeWindows.length > 0 && (
           <div className="h-6 w-px bg-gray-300/30 mx-1"></div>
         )}
         
-        {/* Currently Open App Icons (only for active windows) */}
+        {}
         <div className="flex items-center gap-1">
           {activeWindows.map(window => (
             <button
@@ -184,7 +176,7 @@ export const Taskbar = ({
         </div>
       </div>
 
-      {/* Minimized Windows Preview */}
+      {}
       {minimizedWindows.length > 0 && (
         <div className="mx-auto flex items-center space-x-1">
           {minimizedWindows.map(id => {
@@ -208,9 +200,9 @@ export const Taskbar = ({
         </div>
       )}
 
-      {/* Status Icons */}
+      {}
       <div className="flex items-center px-2 space-x-3 text-sm text-gray-700">
-        {/* WiFi */}
+        {}
         <Popover>
           <PopoverTrigger asChild>
             <button className={`p-1 rounded-full ${isWifiOn ? 'text-gray-700' : 'text-gray-400'}`}>
@@ -232,7 +224,7 @@ export const Taskbar = ({
           </PopoverContent>
         </Popover>
         
-        {/* Bluetooth */}
+        {}
         <Popover>
           <PopoverTrigger asChild>
             <button className={`p-1 rounded-full ${isBluetoothOn ? 'text-gray-700' : 'text-gray-400'}`}>
@@ -281,7 +273,7 @@ export const Taskbar = ({
           </Popover>
         )}
         
-        {/* Calendar popup */}
+        {}
         <Popover>
           <PopoverTrigger asChild>
             <button className="px-2" aria-label="Open calendar">

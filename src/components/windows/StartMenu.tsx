@@ -17,7 +17,6 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
   const [showPowerOptions, setShowPowerOptions] = useState(false);
   const [isShuttingDown, setIsShuttingDown] = useState(false);
 
-  // Categorize windows by type
   const utilityApps = windows.filter(w => 
     w.id !== 'about' && 
     w.id !== 'projects' && 
@@ -43,7 +42,6 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
     ['about', 'projects', 'skills', 'experience', 'contact'].includes(w.id)
   );
 
-  // Filter apps based on search query
   useEffect(() => {
     if (!searchQuery) {
       setFilteredApps([]);
@@ -65,12 +63,9 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
 
   const handlePowerOff = () => {
     setIsShuttingDown(true);
-    // toast.info("Shutting down..."); // Removed toast
     
-    // Set shutdown flag before reloading
     sessionStorage.setItem('win11-shutdown-action', 'true');
     
-    // Simulate shutdown screen
     setTimeout(() => {
       document.body.style.backgroundColor = '#000';
       document.body.innerHTML = `
@@ -81,7 +76,6 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
         </div>
       `;
       
-      // After 5 seconds, show a black screen
       setTimeout(() => {
         document.body.innerHTML = '';
         document.body.style.backgroundColor = '#000';
@@ -105,7 +99,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
   return (
     <div 
       className="fixed bottom-12 left-0 w-96 max-w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-tr-lg rounded-tl-lg shadow-xl z-50 border border-white/20 animate-slide-up overflow-hidden"
-      style={{ maxHeight: "calc(100vh - 100px)" }} // <-- add this
+      style={{ maxHeight: "calc(100vh - 100px)" }} 
       onClick={(e) => e.stopPropagation()}
     >
       <div className="p-4 overflow-y-auto" style={{ maxHeight: "calc(100vh - 180px)" }}>
@@ -120,7 +114,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
           />
         </div>
         
-        {/* Search results */}
+        {}
         {searchQuery && (
           <div className="mb-4">
             <h3 className="text-sm font-medium mb-2">Search Results</h3>
@@ -145,7 +139,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
           </div>
         )}
         
-        {/* Portfolio section */}
+        {}
         {!searchQuery && (
           <>
             <h3 className="text-sm font-medium mb-2">Portfolio</h3>
@@ -164,7 +158,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
               ))}
             </div>
             
-            {/* Games section */}
+            {}
             <h3 className="text-sm font-medium mb-2">Games</h3>
             <div className="grid grid-cols-3 gap-2">
               {gameApps.map(app => (
@@ -181,7 +175,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
               ))}
             </div>
             
-            {/* Utilities section */}
+            {}
             <h3 className="text-sm font-medium mb-2">Utilities</h3>
             <div className="grid grid-cols-3 gap-2 max-h-48 overflow-y-auto">
               {actualUtilityApps.map(app => (
@@ -201,7 +195,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onClose }) => {
         )}
       </div>
       
-      {/* Bottom bar with power button */}
+      {}
       <div className="border-t border-gray-200 dark:border-gray-700 flex justify-between items-center p-2">
         <div className="flex items-center">
           <button 

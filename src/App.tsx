@@ -7,7 +7,6 @@ import Desktop from "./components/windows/Desktop";
 import NotFound from "./pages/NotFound";
 import React from "react";
 
-// Create a new QueryClient instance
 const queryClient = new QueryClient();
 
 const App: React.FC = () => {

@@ -6,5 +6,4 @@ export interface WindowType {
   content: React.ReactNode;
   isOpen: boolean;
   zIndex: number;
-  // ...other properties
 }

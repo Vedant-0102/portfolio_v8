@@ -567,7 +567,6 @@ export const WindowsProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const handleShutdown = () => {
     setIsShuttingDown(true);
 
-    // Close all windows first
     setWindows(prevWindows =>
       prevWindows.map(window => ({
         ...window,
@@ -577,7 +576,6 @@ export const WindowsProvider: React.FC<{ children: React.ReactNode }> = ({ child
     );
     setMinimizedWindows([]);
 
-    // Create shutdown container
     const shutdownContainer = document.createElement('div');
     shutdownContainer.style.cssText = `
       position: fixed;
@@ -592,10 +590,8 @@ export const WindowsProvider: React.FC<{ children: React.ReactNode }> = ({ child
       z-index: 99999;
     `;
 
-    // Only show loader, no text
     shutdownContainer.innerHTML = `<div class="shutdown-loader"></div>`;
 
-    // Add styles for the loader
     const style = document.createElement('style');
     style.textContent = `
       .shutdown-loader {
@@ -615,7 +611,6 @@ export const WindowsProvider: React.FC<{ children: React.ReactNode }> = ({ child
     document.body.appendChild(style);
     document.body.appendChild(shutdownContainer);
 
-    // After 2 seconds, transition to black screen
     setTimeout(() => {
       shutdownContainer.style.transition = 'background 0.5s ease-in-out';
       shutdownContainer.style.background = 'black';

@@ -17,7 +17,6 @@ export const Desktop = () => {
   const [isShuttingDown, setIsShuttingDown] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  // Show boot animation with slower progress
   useEffect(() => {
     const isShutdownAction = sessionStorage.getItem('win11-shutdown-action') === 'true';
     sessionStorage.removeItem('win11-shutdown-action');
@@ -63,7 +62,6 @@ export const Desktop = () => {
     }
   }, []);
 
-  // Load wallpaper from localStorage
   useEffect(() => {
     const savedWallpaper = localStorage.getItem('win11-wallpaper');
     if (savedWallpaper) {

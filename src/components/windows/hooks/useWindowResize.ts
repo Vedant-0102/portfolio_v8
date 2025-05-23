@@ -25,14 +25,12 @@ export function useWindowResize(
   const resizeHandlerRef = useRef<(e: MouseEvent) => void>(() => {});
   const stopResizeRef = useRef<() => void>(() => {});
 
-  // Initialize resize handlers
   const startResize = (direction: string, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     setIsResizing(true);
     setResizeDirection(direction);
     
-    // Define the resize handler function
     const handleResize = (e: MouseEvent) => {
       if (!isResizing || isMaximized) return;
       
@@ -47,7 +45,6 @@ export function useWindowResize(
         let newPosX = position.x;
         let newPosY = position.y;
         
-        // Handle different resize directions
         if (direction.includes('right')) {
           newWidth = Math.max(300, clientX - rect.left - position.x);
         }
@@ -73,7 +70,6 @@ export function useWindowResize(
       }
     };
     
-    // Define the stop resize function
     const stopResize = () => {
       setIsResizing(false);
       setResizeDirection(null);
@@ -81,7 +77,6 @@ export function useWindowResize(
       document.removeEventListener('mouseup', stopResizeRef.current);
     };
     
-    // Store handlers in refs for cleanup
     resizeHandlerRef.current = handleResize;
     stopResizeRef.current = stopResize;
     
@@ -89,7 +84,6 @@ export function useWindowResize(
     document.addEventListener('mouseup', stopResize);
   };
 
-  // Cleanup effect for resize event listeners
   useEffect(() => {
     return () => {
       document.removeEventListener('mousemove', resizeHandlerRef.current);

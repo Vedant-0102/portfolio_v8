@@ -20,9 +20,7 @@ export const TaskbarContainer: React.FC<TaskbarContainerProps> = ({
 }) => {
   const { windows, toggleWindow, settings, minimizedWindows } = useWindows();
   
-  // Handle specific toggles for special windows
   const handleWindowToggle = (id: string) => {
-    // Ensure settings always opens properly
     if (id === 'settings') {
       const settingsWindow = windows.find(w => w.id === 'settings');
       if (settingsWindow && !settingsWindow.isOpen) {

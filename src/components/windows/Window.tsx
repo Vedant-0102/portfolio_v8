@@ -29,7 +29,6 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
   const nodeRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number } | null>(null);
   
-  // Use custom hooks for position and resize
   const { position, setPosition, originalPosition, setOriginalPosition } = 
     useWindowPosition(window, windowSize);
   
@@ -37,15 +36,12 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
     startResize } = useWindowResize(windowRef, position, windowSize, 
     setWindowSize, setPosition, isMaximized);
 
-  // Center window when opened
   useEffect(() => {
     if (window.isOpen && !window.isMinimized) {
-      // Force window to be centered in the viewport
       if (typeof globalThis.window !== 'undefined') {
         const screenWidth = globalThis.window.innerWidth;
         const screenHeight = globalThis.window.innerHeight;
         
-        // Calculate center position, ensure window is fully visible
         const centerX = Math.max(0, Math.min((screenWidth - windowSize.width) / 2, screenWidth - windowSize.width));
         const centerY = Math.max(0, Math.min((screenHeight - windowSize.height - 60) / 2, screenHeight - windowSize.height - 60));
         
@@ -61,7 +57,6 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
 
   const handleMaximize = () => {
     if (!isMaximized) {
-      // Save current position and size before maximizing
       setOriginalPosition(position);
       setOriginalSize({
         width: windowSize.width,
@@ -69,7 +64,6 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
       });
       setIsMaximized(true);
     } else {
-      // Restore original position and size
       setPosition(originalPosition);
       setIsMaximized(false);
     }
@@ -77,16 +71,13 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
 
   const handleDrag = (e: any, data: { x: number; y: number }) => {
     if (!isMaximized) {
-      // Ensure window remains visible by checking boundaries
       const screenWidth = globalThis.window?.innerWidth || 1920;
       const screenHeight = globalThis.window?.innerHeight || 1080;
       
-      // Calculate boundaries to keep title bar visible
-      const maxX = screenWidth - 100; // Keep at least 100px visible
-      const maxY = screenHeight - 60;  // Keep title bar visible
-      const minX = -windowSize.width + 100; // Keep at least 100px visible from left
+      const maxX = screenWidth - 100; 
+      const maxY = screenHeight - 60;  
+      const minX = -windowSize.width + 100; 
       
-      // Constrain position within boundaries
       const constrainedX = Math.max(minX, Math.min(maxX, data.x));
       const constrainedY = Math.max(0, Math.min(maxY, data.y));
       
@@ -144,7 +135,7 @@ export const Window = ({ window, onClose, onMinimize, onFocus }: WindowProps) =>
           {window.content}
         </WindowContent>
         
-        {/* Resize handles */}
+        {}
         {!isMaximized && window.isResizable !== false && (
           <WindowResizeHandles startResize={startResize} />
         )}

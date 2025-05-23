@@ -14,7 +14,6 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({ isOpen, onClose }) => 
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredApps, setFilteredApps] = useState<any[]>([]);
 
-  // Filter apps based on search query
   useEffect(() => {
     if (!searchQuery) {
       setFilteredApps([]);
@@ -62,7 +61,7 @@ export const SearchPanel: React.FC<SearchPanelProps> = ({ isOpen, onClose }) => 
           )}
         </div>
         
-        {/* Search results */}
+        {}
         <div className="max-h-64 overflow-y-auto">
           {filteredApps.length > 0 ? (
             <div className="grid grid-cols-2 gap-2">

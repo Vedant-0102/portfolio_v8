@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import Draggable from 'react-draggable';
 
@@ -14,7 +13,6 @@ export const DesktopIcon = ({ label, icon, onClick, onDoubleClick, id }: Desktop
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const nodeRef = useRef<HTMLDivElement>(null);
   
-  // Load saved position from localStorage on mount
   useEffect(() => {
     const savedPositions = localStorage.getItem('win11-icon-positions');
     if (savedPositions) {
@@ -33,7 +31,6 @@ export const DesktopIcon = ({ label, icon, onClick, onDoubleClick, id }: Desktop
     const newPosition = { x: data.x, y: data.y };
     setPosition(newPosition);
     
-    // Save position to localStorage
     try {
       const savedPositions = localStorage.getItem('win11-icon-positions');
       const positions = savedPositions ? JSON.parse(savedPositions) : {};
@@ -51,7 +48,7 @@ export const DesktopIcon = ({ label, icon, onClick, onDoubleClick, id }: Desktop
       onStop={handleDragStop}
       bounds="parent"
       nodeRef={nodeRef}
-      grid={[10, 10]} // Make movement less floaty by snapping to a grid
+      grid={[10, 10]} 
     >
       <div 
         ref={nodeRef}

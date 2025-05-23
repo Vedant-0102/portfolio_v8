@@ -23,13 +23,13 @@ export const DesktopMenus = ({
   
   return (
     <>
-      {/* Start Menu */}
+      {}
       <StartMenu 
         isOpen={isStartMenuOpen}
         onClose={() => setIsStartMenuOpen(false)}
       />
       
-      {/* Context Menu */}
+      {}
       {contextMenuPos && (
         <ContextMenu 
           position={contextMenuPos}
