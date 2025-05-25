@@ -123,10 +123,27 @@ const ProjectFolder = () => {
         github: 'https://github.com/Vedant-0102/Sorting-Algo-Web'
       }
     },
+    {
+      id: 'Proj',
+      name: 'Charts Generator',
+      description: 'An intuitive web app for creating interactive charts and visualizations with ease.',
+      tech: ['React', 'CSS'],
+      about: 'Charts Generator is a simple yet powerful tool that enables users to visualize their data through a variety of customizable chart types with just a few clicks.',
+      features: [
+        'Multiple Chart Types: Line, Bar, Pie, and Doughnut charts',
+        'Customizable Labels and Titles: Personalize your charts for clarity and impact',
+        'Interactive Legends: Easily interpret data points by toggling chart elements',
+        'User-Friendly Interface: Designed for quick and effortless chart creation'
+      ],
+      links: {
+        demo: 'https://charts-gen.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Charts-Gen' 
+      }
+    },
       {
         id: 'Proj',
         name: 'Text Editor',
-        description: 'A modern, lightweight text editor built with React and Vite that offers a clean interface and powerful editing capabilities.',
+        description: 'A modern, lightweight text editor built with React that offers a clean interface and powerful editing capabilities.',
         tech: ['React', 'Vite', 'CSS Modules'],
         about: 'This project provides an intuitive writing environment with essential text manipulation features, making it perfect for note-taking, coding, or general writing tasks.',
         features: [
@@ -141,7 +158,7 @@ const ProjectFolder = () => {
           demo: 'https://text-editor-lovat-nine.vercel.app/',
           github: 'https://github.com/Vedant-0102/Text-Editor'
         }
-      },
+      },      
       {
         id: 'Proj',
         name: 'Pixel Art Generator',
@@ -272,7 +289,7 @@ const ProjectFolder = () => {
           ' Smooth Disc Drop Animation',    
         ],
         links: {
-          demo: 'https://connect-4-lemon-beta.vercel.app/',
+          demo: 'https://connect-4-sigma.vercel.app/',
           github: 'https://github.com/Vedant-0102/Connect-4'
         }
       },
