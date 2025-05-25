@@ -272,7 +272,7 @@ const ProjectFolder = () => {
           ' Smooth Disc Drop Animation',    
         ],
         links: {
-          demo: 'https://connect-4-lemon-beta.vercel.app/',
+          demo: 'https://connect-4-sigma.vercel.app/',
           github: 'https://github.com/Vedant-0102/Connect-4'
         }
       },
