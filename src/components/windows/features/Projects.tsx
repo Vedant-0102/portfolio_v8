@@ -196,6 +196,25 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Box Shadow Generator',
+        description: 'This application allows web developers and designers to visually craft perfect box shadows and easily copy the generated CSS code.',
+        tech: ['React', 'CSS'],
+        about: 'Interactive tool for creating and customizing CSS box shadows with real-time preview.',
+        features: [
+          'Interactive Controls : Adjust all box shadow properties with intuitive sliders',
+          'Horizontal and vertical shadow positioning',
+          'Blur and spread radius',
+          'Border radius control, Shadow opacity settings',
+          'Real-time Preview : See your changes instantly reflected in the preview box',
+          'Copy to Clipboard : One-click copy functionality for the generated CSS code'
+        ],
+        links: {
+          demo: 'https://box-shadow-gen.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Box-Shadow-Gen'
+        }
+      },
+      {
+        id: 'Proj',
         name: 'Delivery Route Optimization',
         description: 'A Streamlit app that finds the optimal delivery route using the Traveling Salesperson Problem approach.',
         tech: ['Python'],
