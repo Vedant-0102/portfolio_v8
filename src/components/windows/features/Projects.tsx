@@ -234,6 +234,25 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Glassmorphism Generator',
+        description: 'A sleek tool for crafting customizable glassmorphism effects with live preview and instant CSS output. Built with React.',
+        tech: ['React', 'CSS'],
+        about: 'Glassmorphism Generator is a tool for creating customizable glassmorphism effects with real-time preview and easy CSS code copy functionality.',
+        features: [
+          'Real-time Preview: Live visualization of glassmorphism effect as you adjust parameters',
+          'Customizable Properties: Adjust blur (0–60px), background opacity (0–50%), tint color, and border width (0–8px)',
+          'CSS Code Generation: Instantly generates cross-browser compatible CSS code',
+          'One-Click Copy: Easy copy-to-clipboard functionality for the generated CSS',
+          'Responsive Design: Optimized for desktop and mobile use',
+          'Modern UI: Clean interface with smooth animations and transitions'
+        ],
+        links: {
+          demo: 'https://glassmorphism-gen.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Glassmorphism-Gen'
+        }
+      },
+      {
+        id: 'Proj',
         name: 'Delivery Route Optimization',
         description: 'A Streamlit app that finds the optimal delivery route using the Traveling Salesperson Problem approach.',
         tech: ['Python'],
