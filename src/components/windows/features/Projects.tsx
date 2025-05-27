@@ -215,6 +215,25 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Gradient Generator',
+        description: 'A modern, interactive tool for creating beautiful CSS gradients with real-time preview. Built with React.',
+        tech: ['React', 'CSS'],
+        about: 'Interactive tool for generating and customizing linear CSS gradients with live preview and easy copy functionality.',
+        features: [
+          'Interactive Color Pickers: Choose start and end colors with a visual color picker',
+          'Multiple Gradient Directions: Select from 8 gradient directions (Top-Bottom, Bottom-Top, Left-Right, Right-Left, Diagonals)',
+          'Real-time Preview: Instantly see how your gradient looks',
+          'One-Click Copy: Copy the generated CSS code to clipboard',
+          'Responsive Design: Optimized for desktop and mobile use',
+          'Modern UI: Smooth transitions and clean layout'
+        ],
+        links: {
+          demo: 'https://gradient-gen-ten.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Gradient-Gen'
+        }
+      },
+      {
+        id: 'Proj',
         name: 'Delivery Route Optimization',
         description: 'A Streamlit app that finds the optimal delivery route using the Traveling Salesperson Problem approach.',
         tech: ['Python'],
