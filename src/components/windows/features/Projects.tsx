@@ -196,6 +196,24 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Sudoku Solver',
+        description: 'An interactive web-based Sudoku puzzle solver built with React and Vite.',
+        tech: ['React', 'CSS'],
+        about: 'Solve or generate Sudoku puzzles with visualized steps, smooth animations, and a responsive modern interface.',
+        features: [
+          'Interactive 9×9 grid with real-time validation',
+          'Step-by-step backtracking solver visualization',
+          'Difficulty-based puzzle generator',
+          'Modern UI with 3×3 highlighting and animations',
+          'Responsive design with keyboard and touch support'
+        ],
+        links: {
+          demo: 'https://sudoku-solver-pearl.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Sudoku-Solver'
+        }
+      },      
+      {
+        id: 'Proj',
         name: 'Box Shadow Generator',
         description: 'This application allows web developers and designers to visually craft perfect box shadows and easily copy the generated CSS code.',
         tech: ['React', 'CSS'],
