@@ -355,6 +355,22 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Breakout Game',
+        description: 'Classic Breakout arcade game built with React.',
+        tech: ['React', 'CSS'],
+        about: 'Implementation of the classic Breakout arcade game built with React. This game features smooth animations, responsive controls, and an engaging user interface.',
+        features: [
+          'Responsive Controls – Smooth paddle movement via mouse, touch, and keyboard for seamless gameplay across devices.',
+          'Dynamic Game Mechanics – Realistic ball physics, brick collision detection and win condition.',
+          'Modern UI/UX – Gradient backgrounds, animated elements, game control buttons, and responsive layout with pop-up feedback.'
+        ],
+        links: {
+          demo: 'https://breakout-plum.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Breakout'
+        }
+      },      
+      {
+        id: 'Proj',
         name: 'Connect 4',
         description: 'Fun Connect 4 Game.',
         tech: ['React'],
