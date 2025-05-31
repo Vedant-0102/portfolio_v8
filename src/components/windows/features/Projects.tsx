@@ -41,6 +41,24 @@ const ProjectFolder = () => {
     },
     {
       id: 'Proj',
+      name: 'Trello ',
+      description: 'Trello built with React, TypeScript, and Tailwind CSS, featuring a clean and responsive design with dark mode support.',
+      tech: ['React', 'TypeScript', 'TailwindCSS'],
+      about: 'A feature-rich Trello Project with modern UI/UX,card management, and responsive design.',
+      screenshots: [],
+      features: [
+        'Board & List Management – Create, edit, and delete boards and lists with customizable titles and colors. Reorder lists using drag-and-drop and collapse them for better organization.',
+        'Card System – Add, edit, delete, and move cards between lists. Cards support detailed descriptions, comments, and real-time updates for seamless collaboration.',
+        'Modern UI/UX – Clean design with dark mode, collapsible sidebar, custom scrollbars, and toast notifications—built using shadcn/ui components.',
+        'Dark Mode Support – Toggle between light and dark themes for a comfortable user experience.',
+      ],
+      links: {
+        demo: 'https://trello-beryl-ten.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Trello'
+      }
+    },    
+    {
+      id: 'Proj',
       name: 'AI Model to Predict winner of Game',
       description: 'CS-GO Global Offensive a popular first person Shooter game.',
       tech: ['Python', 'Jupyter Notebook'],
