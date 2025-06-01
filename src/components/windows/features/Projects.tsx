@@ -229,7 +229,25 @@ const ProjectFolder = () => {
           demo: 'https://sudoku-solver-pearl.vercel.app/',
           github: 'https://github.com/Vedant-0102/Sudoku-Solver'
         }
-      },      
+      },
+      {
+        id: 'Proj',
+        name: 'Colour Picker',
+        description: 'A simple and intuitive colour picker built with React.',
+        tech: ['React', 'CSS'],
+        about: 'Pick colors from a palette or image, view their RGB values, and copy them to your clipboard with ease.',
+        features: [
+          'Upload an image to extract colors',
+          'Choose from a wide range of colors or create custom ones',
+          'Real-time RGB value display',
+          'One-click RGB copy to clipboard',
+          'Clean and user-friendly interface'
+        ],
+        links: {
+          demo: 'https://colour-picker-flax.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Colour-Picker'
+        }
+      },         
       {
         id: 'Proj',
         name: 'Box Shadow Generator',
