@@ -76,6 +76,24 @@ const ProjectFolder = () => {
     },
     {
       id: 'Proj',
+      name: 'DJ Studio',
+      description: 'A modern web application designed for DJs to mix, play, and control music tracks in real time using dual decks and advanced audio controls.',
+      tech: ['React', 'CSS Modules', 'Web Audio API', 'Media Session API'],
+      about: 'DJ Studio is a feature-rich web app that lets users explore and mix music using dual decks. It includes real-time tempo, pitch, and volume adjustments, smart playlist management, and seamless transitions for a professional DJ experience.',
+      features: [
+        'Intuitive music playback controls (play, pause, seek, volume, mute)',
+        'Smart music library with playlist and search functionality',
+        'Real-time audio visualization and equalizer presets',
+        'Dual-deck system with tempo, pitch, and volume control',
+        'Seamless crossfading and performance-optimized interface'
+      ],
+      links: {
+        demo: 'https://dj-studio.vercel.app/',
+        github: 'https://github.com/Vedant-0102/DJ-Studio'
+      }
+    },    
+    {
+      id: 'Proj',
       name: 'Audio Visualizer',
       description: 'A project to visualize audio in real-time from audio files. This application provides graphical representations of audio signals, making it easier to understand and analyze sound.',
       tech: ['TypeScript', 'Tailwind CSS', 'Three.js', 'React', 'React Three Fiber'],
