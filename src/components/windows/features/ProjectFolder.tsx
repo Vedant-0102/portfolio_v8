@@ -20,76 +20,7 @@ export const ProjectFolder = () => {
   const [activeTab, setActiveTab] = useState<'overview' | 'tech' | 'demo'>('overview');
   
   const projects: Project[] = [
-    {
-      id: 'proj1',
-      name: 'Portfolio Website',
-      description: 'A personal portfolio website built with React and TailwindCSS. Features responsive design, dark mode, and smooth animations.',
-      tech: ['React', 'TailwindCSS', 'Vite'],
-      about: 'This personal portfolio showcases my skills and projects in web development. Built with modern technologies, it features a responsive design that works great on all devices, animated transitions, and a user-friendly interface.',
-      screenshots: [],
-      features: [
-        'Responsive design for all devices',
-        'Dark/light theme switching',
-        'Interactive project showcase',
-        'Contact form with validation'
-      ],
-      links: {
-        demo: 'https://portfolio.example.com',
-        github: 'https://github.com/username/portfolio'
-      }
-    },
-    {
-      id: 'proj2',
-      name: 'E-commerce Platform',
-      description: 'Online shopping platform with React, Node.js and MongoDB. Features user authentication, product catalog, and payment processing.',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-      about: 'A full-featured e-commerce solution that provides a seamless shopping experience. This platform includes user authentication, product management, shopping cart functionality, secure payment processing, and order tracking.',
-      features: [
-        'User authentication and profiles',
-        'Product search and filtering',
-        'Shopping cart functionality',
-        'Payment processing',
-        'Order tracking'
-      ],
-      links: {
-        demo: 'https://shop.example.com',
-        github: 'https://github.com/username/ecommerce'
-      }
-    },
-    {
-      id: 'proj3',
-      name: 'Mobile App',
-      description: 'Cross-platform mobile app using React Native. Features location tracking, social sharing, and offline support.',
-      tech: ['React Native', 'Expo', 'Firebase'],
-      about: 'This cross-platform mobile application provides location-based services with social features. Built with React Native and Expo, it works seamlessly on both iOS and Android devices with native-like performance.',
-      features: [
-        'Cross-platform (iOS & Android)',
-        'User authentication',
-        'Location tracking',
-        'Push notifications',
-        'Offline data sync'
-      ],
-      links: {
-        github: 'https://github.com/username/mobile-app'
-      }
-    },
-    {
-      id: 'proj4',
-      name: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard with real-time data visualization using D3.js and React.',
-      tech: ['D3.js', 'React', 'Node.js'],
-      about: 'This interactive dashboard provides powerful data visualization capabilities for complex datasets. Using D3.js with React, it renders dynamic charts and graphs that update in real-time as data changes.',
-      features: [
-        'Real-time data updates',
-        'Interactive charts and graphs',
-        'Data filtering and search',
-        'Export to CSV/PDF'
-      ],
-      links: {
-        demo: 'https://dashboard.example.com',
-        github: 'https://github.com/username/dashboard'
-      }
-    }
+    
   ];
 
   return (
