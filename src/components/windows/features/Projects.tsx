@@ -358,6 +358,24 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: '2048 Game',
+        description: 'A React-based recreation of the classic 2048 puzzle game with smooth UI and core gameplay mechanics like merging and scoring.',
+        tech: ['React', 'CSS', 'JavaScript'],
+        about: '2048 Game is a web-based version of the popular sliding tile puzzle game. Players combine matching tiles to reach the 2048 tile. The game includes essential features like smooth animations, score tracking, restart functionality, and a clean user interface.',
+        features: [
+          'Interactive tile movement using keyboard controls',
+          'Automatic merging and scoring system',
+          'Game over detection when no valid moves remain',
+          'Real-time score updates and highest tile tracking',
+          'Restart button to reset the game at any time'
+        ],
+        links: {
+          demo: 'https://2048-ten-beta.vercel.app/',
+          github: 'https://github.com/Vedant-0102/2048'
+        }
+      },      
+      {
+        id: 'Proj',
         name: 'Minesweeper Game',
         description: 'A modern version of Minesweeper built with React, featuring animations and game state tracking.',
         tech: ['React', 'CSS'],
