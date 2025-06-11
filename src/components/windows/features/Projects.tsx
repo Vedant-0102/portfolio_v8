@@ -358,6 +358,23 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Translator',
+        description: 'A web-based text translator with language selection and speech playback.',
+        tech: ['React', 'CSS', 'JavaScript'],
+        about: 'Translate text between languages with options to listen to the result or copy it to clipboard. Built with a user-friendly interface and responsive design.',
+        features: [
+          'Text translation between languages',
+          'Language selection for source and target',
+          'Text-to-speech playback',
+          'Copy translated text to clipboard'
+        ],
+        links: {
+          demo: 'https://translator-six-opal.vercel.app/',
+          github: 'https://github.com/Vedant-0102/Translator'
+        }
+      },      
+      {
+        id: 'Proj',
         name: '2048 Game',
         description: 'A React-based recreation of the classic 2048 puzzle game with smooth UI and core gameplay mechanics like merging and scoring.',
         tech: ['React', 'CSS', 'JavaScript'],
