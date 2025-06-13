@@ -523,7 +523,110 @@ const ProjectFolder = () => {
           demo: 'https://student-report-card-sand.vercel.app/',
           github: 'https://github.com/Vedant-0102/Student-Report'
         }
-      }
+      },
+      {
+        id: 'Proj',
+        name: 'Motion Detection',
+        description: 'Detects motion in video using background subtraction in OpenCV.',
+        tech: ['Python', 'OpenCV', 'NumPy'],
+        about: 'This Python script uses OpenCV to detect motion using background subtraction. It checks each frame, highlights moving parts, and shows the result in real-time. The video loops automatically and exits on pressing X.',
+        features: [
+          'Background subtraction using MOG2',
+          'Real-time video processing',
+          'Auto-looping video',
+          'Keyboard control to exit'
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Motion-Detection'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Edge Detection',
+        description: 'Performs real-time edge detection using Laplacian and Canny methods.',
+        tech: ['Python', 'OpenCV'],
+        about: 'This Python program performs edge detection on a webcam feed using Laplacian and Canny algorithms. It displays all results in real-time until the user presses X.',
+        features: [
+          'Uses Laplacian and Canny algorithms',
+          'Real-time edge detection',
+          'Displays original and processed streams',
+          'Works with live webcam input'
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Edge-Detection'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Rotating Matrices 3D',
+        description: 'Visualizes 3D rotation using transformation matrices.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'This project shows how rotation matrices work in 3D space using a 3x3 orthogonal matrix. It helps in understanding 3D transformations in linear algebra.',
+        features: [
+          '3D rotation matrix visualization',
+          'Uses 3x3 orthogonal matrix',
+          'Interactive 3D rendering',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Rotating-Matrices-3D'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Rotating Donut',
+        description: '3D ASCII donut animation using JavaScript.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'This JavaScript project renders a rotating 3D donut shape using ASCII characters. It’s a fun terminal-style visual made with simple math and timing.',
+        features: [
+          'ASCII art rendering',
+          '3D rotation animation',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Rotating-Donut'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Matrix Rain',
+        description: 'Matrix-style rain effect using HTML canvas.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'A simple visual effect that mimics the falling green characters from The Matrix movie. It uses canvas to create a looping rain animation.',
+        features: [
+          'Matrix-style animation',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Matrix-Rain'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'Terrain Generation',
+        description: '3D-like terrain generation using height mapping and shading.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Generates a random terrain on the canvas using noise and shading techniques. It gives a 3D feel and is great for visual experimentation.',
+        features: [
+          'Procedural terrain generation',
+          'Canvas rendering',
+          '3D-like shading',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Terrain-Gen'
+        }
+      },
+      {
+        id: 'Proj',
+        name: 'DVD Animation',
+        description: 'Classic bouncing DVD logo animation using JavaScript.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'This fun animation recreates the classic DVD logo bouncing around the screen. The logo changes direction on hitting screen edges, just like in old DVD players.',
+        features: [
+          'Classic DVD-style animation',
+          'Edge bouncing logic',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/DVD-Animation'
+        }
+      }      
     ]
 
   return (
