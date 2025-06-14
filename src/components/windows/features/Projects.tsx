@@ -111,6 +111,23 @@ const ProjectFolder = () => {
     },  
     {
       id: 'Proj',
+      name: 'Invoice Generator',
+      description: 'A simple invoice generator built with React and TypeScript, designed to help users create and manage invoices efficiently.',
+      tech: ['React', 'TypeScript', 'TailwindCSS'],
+      about: 'A modern, user-friendly invoice generation tool with customizable templates and efficient invoice creation workflow.',
+      screenshots: [],
+      features: [
+        'Customization – Easily customize invoice templates to suit your business needs. Add client details, items, and calculate totals.',
+        'Create Invoices – Seamlessly create and edit invoices through an intuitive, user-friendly interface.',
+        'Modern UI/UX – Clean and responsive design with a focus on usability, built using React and TailwindCSS.'
+      ],
+      links: {
+        demo: 'https://invoice-delta-ten.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Invoice'
+      }
+    },    
+    {
+      id: 'Proj',
       name: 'To Do Mobile App',
       description: 'Cross-platform mobile app using Flutter',
       tech: ['Flutter', 'Hive'],
