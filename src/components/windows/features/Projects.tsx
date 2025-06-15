@@ -108,7 +108,42 @@ const ProjectFolder = () => {
         demo: 'https://audio-visualizer-gules.vercel.app/',
         github: 'https://github.com/Vedant-0102/Audio-Visualizer'
       }
-    },  
+    },
+    {
+      id: 'Proj',
+      name: 'FlashCards',
+      description: 'FlashCards is a modern, user-friendly web application designed to help users create and manage flashcards efficiently.',
+      tech: ['React', 'TypeScript', 'Tailwind CSS'],
+      about: 'FlashCards helps users create, view, and organize study flashcards. It supports importing/exporting cards in JSON format and features a responsive design for mobile and desktop use.',
+      features: [
+        'Create FlashCards with title and description',
+        'View FlashCards in an organized layout',
+        'Delete unwanted FlashCards',
+        'Responsive design for all devices',
+        'Import and export flashcards in JSON format'
+      ],
+      links: {
+        demo: 'https://flash-cards-gamma-two.vercel.app/',
+        github: 'https://github.com/Vedant-0102/FlashCards'
+      }
+    },
+    {
+      id: 'Proj',
+      name: 'Calendar Tasks',
+      description: 'Calendar Tasks is a simple app allowing users to create, view, and manage daily tasks efficiently.',
+      tech: ['React', 'TypeScript', 'Tailwind CSS'],
+      about: 'Calendar Tasks is a task management app that allows users to organize their daily activities. It includes features like task creation, viewing, deletion, and drag-and-drop for easy rearrangement.',
+      features: [
+        'Create tasks with titles and descriptions',
+        'View all tasks with their details',
+        'Delete tasks that are no longer needed',
+        'Drag and drop to rearrange tasks'
+      ],
+      links: {
+        demo: 'https://calendar-task-three.vercel.app/',
+        github: 'https://github.com/Vedant-0102/CalendarTask'
+      }
+    },    
     {
       id: 'Proj',
       name: 'Invoice Generator',
