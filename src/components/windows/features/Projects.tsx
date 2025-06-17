@@ -610,6 +610,22 @@ const ProjectFolder = () => {
       },
       {
         id: 'Proj',
+        name: 'Text Image Enhancer',
+        description: 'Enhances text visibility in images using edge detection with OpenCV.',
+        tech: ['Python', 'OpenCV'],
+        about: 'This Python project enhances text images by applying image processing techniques like grayscale conversion, thresholding, and edge detection using OpenCV. It is designed to improve the clarity of textual content, making it more readable and suitable for OCR or visual inspection.',
+        features: [
+          'Grayscale and threshold processing',
+          'Edge detection using Canny filter',
+          'Improves readability of scanned or blurred text',
+          'Simple and efficient pipeline for preprocessing'
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/text-image-enchancer'
+        }
+      },      
+      {
+        id: 'Proj',
         name: 'Rotating Matrices 3D',
         description: 'Visualizes 3D rotation using transformation matrices.',
         tech: ['HTML', 'CSS', 'JavaScript'],
