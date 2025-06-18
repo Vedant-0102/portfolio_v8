@@ -509,7 +509,24 @@ const ProjectFolder = () => {
           demo: 'https://breakout-plum.vercel.app/',
           github: 'https://github.com/Vedant-0102/Breakout'
         }
-      },      
+      },
+      {
+        id: 'Proj',
+        name: 'DungeonGame-JS',
+        description: 'A simple dungeon game built using HTML, CSS, and JavaScript. The player navigates through a dungeon, collects items, and avoids enemies.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        about: 'Navigate a dungeon, collect items like swords and keys, avoid or fight enemies, and try to survive as long as possible.',
+        features: [
+          'Randomly generated dungeon layout',
+          'Player movement and collision detection',
+          'Collectible items and power-ups',
+          'Enemy AI and health management'
+        ],
+        links: {
+          demo: 'https://dungeon-game-js.vercel.app/',
+          github: 'https://github.com/Vedant-0102/DungeonGame-JS'
+        }
+      },          
       {
         id: 'Proj',
         name: 'Connect 4',
