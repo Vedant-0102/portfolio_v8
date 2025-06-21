@@ -640,7 +640,7 @@ const ProjectFolder = () => {
         links: {
           github: 'https://github.com/Vedant-0102/text-image-enchancer'
         }
-      },      
+      },       
       {
         id: 'Proj',
         name: 'Rotating Matrices 3D',
@@ -655,7 +655,19 @@ const ProjectFolder = () => {
         links: {
           github: 'https://github.com/Vedant-0102/Rotating-Matrices-3D'
         }
-      },
+      },{
+        id: 'Proj',
+        name: 'Facial-Recognition',
+        description: 'Detects faces using OpenCV and Python.',
+        tech: ['Python', 'OpenCV'],
+        about: 'This project detects human faces in images or video streams using OpenCV’s face detection capabilities. It demonstrates basic computer vision techniques.',
+        features: [
+          'Face detection',
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Facial-Recognition'
+        }
+      },      
       {
         id: 'Proj',
         name: 'Rotating Donut',
