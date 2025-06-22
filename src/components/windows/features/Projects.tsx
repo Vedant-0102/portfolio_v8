@@ -655,7 +655,8 @@ const ProjectFolder = () => {
         links: {
           github: 'https://github.com/Vedant-0102/Rotating-Matrices-3D'
         }
-      },{
+      },
+      {
         id: 'Proj',
         name: 'Facial-Recognition',
         description: 'Detects faces using OpenCV and Python.',
@@ -667,7 +668,23 @@ const ProjectFolder = () => {
         links: {
           github: 'https://github.com/Vedant-0102/Facial-Recognition'
         }
-      },      
+      },
+      {
+        id: 'Proj',
+        name: 'Dominant-Colour-Extractor',
+        description: 'Extracts the dominant colour from an image using Python.',
+        tech: ['Python', 'ColorThief', 'Pillow', 'matplotlib'],
+        about: 'This project uses ColourThief to extract the most prominent colour from an image. It processes and displays the dominant colour in real-time, offering a simple way to analyze image palettes.',
+        features: [
+          'Dominant colour detection',
+          'Real-time colour display',
+          'Image processing with Pillow',
+          'Visual output with matplotlib'
+        ],
+        links: {
+          github: 'https://github.com/Vedant-0102/Dominant-Colour-Extractor.git'
+        }
+      },        
       {
         id: 'Proj',
         name: 'Rotating Donut',
