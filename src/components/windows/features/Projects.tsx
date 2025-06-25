@@ -38,7 +38,25 @@ const ProjectFolder = () => {
         demo: 'https://www.thelimeai.xyz/',
         github: 'https://github.com/Om-Thanage/LimeAi'
       }
-    },
+    },{
+      id: 'Proj',
+      name: 'Web-Chat-Socket',
+      description: 'A real-time Twitch-style chat app built with TypeScript and Socket.IO.',
+      tech: ['React', 'TypeScript', 'TailwindCSS', 'Socket.IO'],
+      about: 'Web-Chat-Socket is a real-time messaging platform with emoji support, user badges, and a sleek, responsive UI.',
+      screenshots: [],
+      features: [
+        'Real-Time Messaging – Powered by Socket.IO for low-latency chat updates.',
+        'Emoji Support – Built-in emoji picker for expressive communication.',
+        'User Badges – Random badge assignment for a Twitch-like experience.',
+        'Auto-Scroll & Pause – Chat scrolls automatically but respects manual pauses.',
+        'Responsive Design – Mobile-friendly layout with touch-friendly controls.'
+      ],
+      links: {
+        demo: 'https://web-chat-socket-seven.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Web-Chat-Socket'
+      }
+    },    
     {
       id: 'Proj',
       name: 'Trello ',
