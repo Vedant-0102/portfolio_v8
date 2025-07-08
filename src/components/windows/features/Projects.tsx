@@ -38,7 +38,8 @@ const ProjectFolder = () => {
         demo: 'https://www.thelimeai.xyz/',
         github: 'https://github.com/Om-Thanage/LimeAi'
       }
-    },{
+    },
+    {
       id: 'Proj',
       name: 'Web-Chat-Socket',
       description: 'A real-time Twitch-style chat app built with TypeScript and Socket.IO.',
@@ -56,7 +57,24 @@ const ProjectFolder = () => {
         demo: 'https://web-chat-socket-seven.vercel.app/',
         github: 'https://github.com/Vedant-0102/Web-Chat-Socket'
       }
-    },    
+    },
+    {
+    id: 'Proj',
+    name: 'Google Calendar',
+    description: 'Google authentication using Supabase, allowing users to securely sign in, create tasks, and view them directly on their Google Calendar.',
+    tech: ['React', 'JavaScript', 'CSS', 'Supabase'],
+    about: 'This app integrates Google Calendar API with Supabase Auth, enabling users to log in using their Google account and manage tasks that sync directly to their calendar.',
+    screenshots: [],
+    features: [
+      'User Authentication – Google login using Supabase, ensuring user data is protected.',
+      'Google Calendar Integration – Users can create and manage tasks that sync with their Google Calendar.',
+      'Create Tasks – Add tasks with details like title, description, and due date.'
+    ],
+    links: {
+    demo: 'https://google-calendar-kappa.vercel.app/',
+    github: 'https://github.com/Vedant-0102/GoogleCalendar'
+    }
+    },   
     {
       id: 'Proj',
       name: 'Trello ',
