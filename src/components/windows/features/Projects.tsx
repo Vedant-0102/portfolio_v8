@@ -41,6 +41,25 @@ const ProjectFolder = () => {
     },
     {
       id: 'Proj',
+      name: 'Rubiks Cube 3D',
+      description: 'A 3D interactive Rubik’s Cube web application built with React, TypeScript, and Tailwind CSS.',
+      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Three.js'],
+      about: 'Rubiks Cube 3D is a fully interactive 3D Rubik’s Cube simulator with realistic visuals, responsive controls, and move tracking — designed for both casual play and skill improvement.',
+      screenshots: [],
+      features: [
+        '3D Rubik’s Cube Simulation – Rotate, twist, and interact with a realistic 3D Rubik’s Cube right in your browser.',
+        'Keyboard Controls – Use your keyboard to perform cube moves, making the experience fast and intuitive.',
+        'Move History – Track your moves and undo/redo actions to improve your solving skills.',
+        'Responsive Design – Fully responsive and mobile-friendly interface.',
+        'Theme Support – Switch between light and dark themes for a comfortable viewing experience.'
+      ],
+      links: {
+        demo: 'https://rubiks-cube-3d.vercel.app/',
+        github: 'https://github.com/Vedant-0102/Rubiks-Cube-3D.git'
+      }
+    },
+    {
+      id: 'Proj',
       name: 'Web-Chat-Socket',
       description: 'A real-time Twitch-style chat app built with TypeScript and Socket.IO.',
       tech: ['React', 'TypeScript', 'TailwindCSS', 'Socket.IO'],
